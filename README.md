@@ -61,6 +61,7 @@ module.exports = {
 
 #### What each settings mean?
 
+```
 relays - list of relays through which you wish to broadcast transactions
 walletAddress - address of your faucet
 walletPassphrase - passphrase of your faucet's wallet
@@ -69,6 +70,7 @@ vendorField - what message you wish to add to each payout
 payoutAmount - what amount you wish to payout per request
 payoutCooldown - for how long will user not be able to request a payment for
 dailyPayoutLimit - what's the faucet's max (overall) daily payout
+```
 
 Above settings are the main ones. If you wish to customize the database or server settings on which
 the API is running, you should have a look at `lib/default.js`.
