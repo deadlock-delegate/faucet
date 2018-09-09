@@ -1,6 +1,10 @@
 # Ark Faucet Plugin
 
-> Faucet plugin for [Ark Core](https://github.com/ArkEcosystem/core).
+> Faucet plugin for [Ark Core](https://github.com/ArkEcosystem/core). This plugin enables api endpoints for a faucet only and does not include a template.
+
+## Demo
+
+You can see a working demo of a devnet v2 faucet here: https://deadlock.sh/faucet
 
 ## Installation
 
