@@ -1,6 +1,6 @@
-# Ark New Relic Plugin
+# Ark Faucet Plugin
 
-> [New Relic](https://newrelic.com) performance monitoring and management integration for [Ark Core](https://github.com/ArkEcosystem/core).
+> Faucet plugin for [Ark Core](https://github.com/ArkEcosystem/core).
 
 ## Installation
 
