@@ -31,7 +31,7 @@ module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
-  '@deadlock/ark-faucet': {},  // this is the newly added line, put it at the very end
+  '@deadlock/ark-faucet': {}  // this is the newly added line, put it at the very end
 }
 ```
 
@@ -59,7 +59,7 @@ module.exports = {
     payoutAmount: 5 * Math.pow(10, 8), // 5 (eg. ARK)
     payoutCooldown: 259200, // 3 days
     dailyPayoutLimit: 200 * Math.pow(10, 8) // 200 (eg. ARK)
-  },
+  }
 }
 ```
 
