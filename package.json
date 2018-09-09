@@ -1,0 +1,53 @@
+{
+  "name": "@deadlock/ark-faucet",
+  "version": "0.1.0",
+  "description": "Ark Faucet Plugin",
+  "author": "roks0n",
+  "license": "MIT",
+  "keywords": [
+    "core",
+    "blockchain",
+    "ark",
+    "crypto",
+    "dpos",
+    "error",
+    "faucet"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadlock-delegate/ark-faucet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deadlock-delegate/ark-faucet/issues"
+  },
+  "homepage": "https://github.com/deadlock-delegate/ark-faucet",
+  "scripts": {
+    "test": "ARK_ENV=test jest --runInBand --forceExit",
+    "lint": "eslint ./ --fix"
+  },
+  "dependencies": {
+    "@arkecosystem/core-container": "^0.1.1",
+    "@arkecosystem/crypto": "^0.1.2",
+    "axios": "^0.18.0",
+    "bignumber.js": "^7.2.1",
+    "boom": "^7.2.0",
+    "delay": "^3.1.0",
+    "fs-extra": "^7.0.0",
+    "hapi": "^17.5.4",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.10",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^22.4.3",
+    "jest-extended": "^0.7.1",
+    "standard": "^11.0.1"
+  }
+}
