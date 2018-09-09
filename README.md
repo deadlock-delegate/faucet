@@ -13,6 +13,7 @@ You can see a working demo of a devnet v2 faucet here: https://deadlock.sh/fauce
 ```bash
 cd ~/ark-core/plugins
 git clone https://github.com/deadlock-delegate/ark-faucet
+cd ark-faucet
 lerna bootstrap
 ```
 
@@ -37,7 +38,7 @@ module.exports = {
 
 ### Configuration
 
-You set configuration in the `plugins.js` wher eyou added the `'@deadlock/ark-faucet': {}` line:
+You set configuration in the `plugins.js` where you added the `'@deadlock/ark-faucet': {}` line:
 
 ```js
 module.exports = {
@@ -63,7 +64,7 @@ module.exports = {
 }
 ```
 
-#### What each settings mean?
+#### What each setting means?
 
 ```
 relays - list of relays through which you wish to broadcast transactions
