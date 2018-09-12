@@ -4,7 +4,7 @@ const defaults = require('../../../lib/defaults')
 const database = require('../../../lib/database')
 const startServer = require('../../../lib/server')
 
-const walletAddress = 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW'
+const walletAddress = 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava'
 const walletAddressExists = 'D5rHMAmTXVbG7HVF3NvTN3ghpWGEii5mH2'
 
 let instance

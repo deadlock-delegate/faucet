@@ -4,7 +4,7 @@ const delay = require('delay')
 const Roll = require('../../../lib/Database/models/roll')
 
 let rollTest
-const address = 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW'
+const address = 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava'
 const ip = '127.0.0.1'
 
 beforeEach(async done => {

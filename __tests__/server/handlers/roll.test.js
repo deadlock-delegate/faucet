@@ -5,7 +5,7 @@ const database = require('../../../lib/database')
 const startServer = require('../../../lib/server')
 const config = require('../../../lib/config')
 
-const address = 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW'
+const address = 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava'
 const addressExists = 'D5rHMAmTXVbG7HVF3NvTN3ghpWGEii5mH2'
 const ipExists = '127.0.0.1'
 
@@ -57,7 +57,7 @@ describe('Server - Handlers - Roll', () => {
             expect(response.statusCode).toBe(400)
         })
 
-        it('should error if no address is passed along', async () => {
+        it('should return bad request if no address is passed along', async () => {
             const response = await instance.inject({
                 method: 'POST',
                 url: '/rolls',
@@ -65,7 +65,7 @@ describe('Server - Handlers - Roll', () => {
                 remoteAddress: ipExists
             })
 
-            expect(response.statusCode).toBe(500)
+            expect(response.statusCode).toBe(400)
         })
 
         it('should error if no IP is passed along', async () => {
@@ -88,7 +88,7 @@ describe('Server - Handlers - Roll', () => {
                 remoteAddress: '127.0.0.2'
             })
             const data = JSON.parse(response.payload)
-            expect(data.message).toBe('Daily payout limit has been reached.')
+            expect(data.message).toBe('Faucets daily payout limit has been reached.')
             expect(response.statusCode).toBe(429)
         })
 

@@ -28,7 +28,7 @@ container.resolvePlugin = name => {
                 getLocalWallets: () => {
                     return [{
                         username: 'genesis_17',
-                        address: 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW',
+                        address: 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava',
                         publicKey: '03d7dfe44e771039334f4712fb95ad355254f674c8f5d286503199157b7bf7c357',
                         vote: 'dummy-delegate-pubkey',
                         balance: 100 * Math.pow(10, 8)
@@ -37,7 +37,7 @@ container.resolvePlugin = name => {
                 findByAddress: () => {
                     return {
                         username: 'genesis_17',
-                        address: 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW',
+                        address: 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava',
                         publicKey: '03d7dfe44e771039334f4712fb95ad355254f674c8f5d286503199157b7bf7c357',
                         vote: 'dummy-delegate-pubkey',
                         balance: 100 * Math.pow(10, 8)
@@ -46,7 +46,7 @@ container.resolvePlugin = name => {
                 findByUsername: () => {
                     return {
                         username: 'genesis_17',
-                        address: 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW',
+                        address: 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava',
                         publicKey: '03d7dfe44e771039334f4712fb95ad355254f674c8f5d286503199157b7bf7c357',
                         vote: 'dummy-delegate-pubkey',
                         balance: 100 * Math.pow(10, 8)

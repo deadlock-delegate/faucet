@@ -4,7 +4,7 @@ const delay = require('delay')
 const Transaction = require('../../../lib/Database/models/transaction')
 
 let transactionTest
-const address = 'AJPicaX6vmokoK3x8abBMDpi8GMPc7rLiW'
+const address = 'DFSByMjuFNQy1MkRyyBPxEr6fqsu2w5ava'
 const amount = 10 * Math.pow(10, 8)
 
 beforeEach(async done => {
