@@ -27,14 +27,14 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "@arkecosystem/core-container": "^0.1.1",
+    "@arkecosystem/core-container": "^0.2.0",
     "@arkecosystem/crypto": "0.2.5",
     "axios": "^0.18.0",
     "bignumber.js": "^8.0.1",
     "boom": "^7.2.2",
     "delay": "^4.1.0",
     "fs-extra": "^7.0.1",
-    "hapi": "^17.7.0",
+    "hapi": "^17.8.1",
     "knex": "^0.15.2",
     "lodash": "^4.17.11",
     "request-ip": "^2.1.3",
