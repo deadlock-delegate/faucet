@@ -9,36 +9,36 @@ const walletAddressExists = 'D5rHMAmTXVbG7HVF3NvTN3ghpWGEii5mH2'
 
 let instance
 beforeAll(async () => {
-    defaults.database.connection.filename = ':memory:'
-    await database.init(defaults.database)
-    await database.seed()
+  defaults.database.connection.filename = ':memory:'
+  await database.init(defaults.database)
+  await database.seed()
 
-    instance = await startServer(defaults.server)
+  instance = await startServer(defaults.server)
 })
 
 afterAll(async () => {
-    await instance.stop()
+  await instance.stop()
 })
 
 describe('Server - Handlers - Wallet', () => {
-    describe('transactions', () => {
-        it('should return array of transaction of a given address', async () => {
-            const response = await instance.inject({
-                method: 'GET',
-                url: `/wallet/${walletAddressExists}/transactions`
-            })
+  describe('transactions', () => {
+    it('should return array of transaction of a given address', async () => {
+      const response = await instance.inject({
+        method: 'GET',
+        url: `/wallet/${walletAddressExists}/transactions`
+      })
 
-            expect(response.statusCode).toBe(200)
-            expect(JSON.parse(response.payload)).toBeArray()
-        })
-
-        it('should return 404 if there are no transactions', async () => {
-            const response = await instance.inject({
-                method: 'GET',
-                url: `/wallet/${walletAddress}/transactions`
-            })
-
-            expect(response.statusCode).toBe(404)
-        })
+      expect(response.statusCode).toBe(200)
+      expect(JSON.parse(response.payload)).toBeArray()
     })
+
+    it('should return 404 if there are no transactions', async () => {
+      const response = await instance.inject({
+        method: 'GET',
+        url: `/wallet/${walletAddress}/transactions`
+      })
+
+      expect(response.statusCode).toBe(404)
+    })
+  })
 })
