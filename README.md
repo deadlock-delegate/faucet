@@ -6,11 +6,11 @@
 
 TODO
 
-## Installation
+## 1. Installation
 
-TODO
+`yarn add global @deadlock-delegate/faucet`
 
-### Registration
+### 2. Registration
 
 Open `~/.config/ark-core/<network>/plugins.js` and add the following at the very end:
 
@@ -29,7 +29,7 @@ module.exports = {
 }
 ```
 
-### Configuration
+### 3. Configuration
 
 You set configuration in the `plugins.js` where you added the `'@deadlock-delegate/faucet': {}` line:
 
@@ -72,6 +72,10 @@ dailyPayoutLimit - what's the faucet's max (overall) daily payout
 
 Above settings are the main ones. If you wish to customize the database or server settings on which
 the API is running, you should have a look at `lib/default.js`.
+
+### 4. Run Core with plugins
+
+After you've completed all of the above steps you have to restart your relay process to pick up the plugin from the plugin.js. You can do so by running `ark relay:restart`.
 
 ## Credits
 
