@@ -1,7 +1,7 @@
 {
   "name": "@deadlock-delegate/faucet",
   "version": "0.5.0",
-  "description": "Ark Faucet Plugin",
+  "description": "Faucet plugin for Ark's Core",
   "author": "roks0n",
   "license": "MIT",
   "keywords": [
@@ -10,18 +10,18 @@
     "ark",
     "crypto",
     "dpos",
-    "error",
-    "faucet"
+    "faucet",
+    "arkecosystem"
   ],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deadlock-delegate/ark-faucet.git"
+    "url": "git+https://github.com/deadlock-delegate/faucet.git"
   },
   "bugs": {
-    "url": "https://github.com/deadlock-delegate/ark-faucet/issues"
+    "url": "https://github.com/deadlock-delegate/faucet/issues"
   },
-  "homepage": "https://github.com/deadlock-delegate/ark-faucet",
+  "homepage": "https://github.com/deadlock-delegate/faucet",
   "scripts": {
     "test": "ARK_ENV=test jest --runInBand --forceExit --detectOpenHandles",
     "lint": "eslint ./ --fix"

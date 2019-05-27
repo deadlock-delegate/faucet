@@ -4,25 +4,18 @@
 
 ## Demo
 
-You can see a working demo of a devnet v2 faucet here: https://deadlock.sh/faucet
+TODO
 
 ## Installation
 
-### Clone
-
-```bash
-cd ~/ark-core/plugins
-git clone https://github.com/deadlock-delegate/ark-faucet
-cd ark-faucet
-lerna bootstrap
-```
+TODO
 
 ### Registration
 
-Open `~/.ark/config/plugins.js` and add the following at the very end:
+Open `~/.config/ark-core/<network>/plugins.js` and add the following at the very end:
 
 ```js
-'@deadlock/ark-faucet': {}
+'@deadlock-delegate/faucet': {}
 ```
 
 like so:
@@ -32,20 +25,20 @@ module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
-  '@deadlock/ark-faucet': {}  // this is the newly added line, put it at the very end
+  '@deadlock-delegate/faucet': {}  // this is the newly added line, put it at the very end
 }
 ```
 
 ### Configuration
 
-You set configuration in the `plugins.js` where you added the `'@deadlock/ark-faucet': {}` line:
+You set configuration in the `plugins.js` where you added the `'@deadlock-delegate/faucet': {}` line:
 
 ```js
 module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
-  '@deadlock/ark-faucet': {
+  '@deadlock-delegate/faucet': {
     server: {
       host: '0.0.0.0',
       port: 5000,
