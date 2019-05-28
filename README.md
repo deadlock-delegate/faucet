@@ -4,11 +4,11 @@
 
 ## Demo
 
-TODO
+https://devnet.money
 
 ## 1. Installation
 
-`yarn add global @deadlock-delegate/faucet`
+`yarn global add @deadlock-delegate/faucet`
 
 ### 2. Registration
 
@@ -60,6 +60,7 @@ module.exports = {
 #### What each setting means?
 
 ```
+enabled - if you wish to disable the plugin set this to `false`
 relays - list of relays through which you wish to broadcast transactions
 walletAddress - address of your faucet
 walletPassphrase - passphrase of your faucet's wallet
@@ -76,6 +77,12 @@ the API is running, you should have a look at `lib/default.js`.
 ### 4. Run Core with plugins
 
 After you've completed all of the above steps you have to restart your relay process to pick up the plugin from the plugin.js. You can do so by running `ark relay:restart`.
+
+### Upgrades
+
+In case of any updates you can upgrade the plugin using the command bellow.
+
+`yarn global upgrade @deadlock-delegate/faucet`
 
 ## Credits
 
