@@ -1,6 +1,6 @@
 {
   "name": "@deadlock-delegate/faucet",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Faucet plugin for Ark's Core",
   "author": "roks0n",
   "license": "MIT",
@@ -27,14 +27,14 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "@arkecosystem/core-container": "^2.5.0-next.0",
-    "@arkecosystem/crypto": "^2.5.0-next.0",
+    "@arkecosystem/core-container": "^2.5.0-next.10",
+    "@arkecosystem/crypto": "^2.5.0-next.10",
     "axios": "^0.18.0",
     "bignumber.js": "^8.0.1",
     "boom": "^7.2.2",
     "delay": "^4.1.0",
     "fs-extra": "^8.0.1",
-    "hapi": "^17.8.1",
+    "@hapi/hapi": "^18.3.1",
     "knex": "^0.15.2",
     "lodash": "^4.17.11",
     "request-ip": "^2.1.3",
