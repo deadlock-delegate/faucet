@@ -1,6 +1,6 @@
 # Ark Faucet Plugin
 
-> Faucet plugin for [Ark Core](https://github.com/ArkEcosystem/core). This plugin enables api endpoints for a faucet only and does not include a template.
+Faucet plugin for [Ark Core](https://github.com/ArkEcosystem/core). This plugin enables api endpoints for a faucet only and does not include a template.
 
 #### ❤️ Support maintenance and development of plugins
 If you find this or other plugins useful please consider
