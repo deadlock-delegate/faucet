@@ -1,6 +1,6 @@
 {
   "name": "@deadlock-delegate/faucet",
-  "version": "0.6.6",
+  "version": "0.7.0",
   "description": "Faucet plugin for Ark's Core",
   "author": "roks0n",
   "license": "MIT",
